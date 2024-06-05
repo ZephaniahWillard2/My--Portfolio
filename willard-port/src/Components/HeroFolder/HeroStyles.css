@@ -1,0 +1,11 @@
+.heroContainer{
+    text-align: center;
+    font-size: 4em;
+    margin-top: 3em;
+    padding-bottom: 3.2em;
+    border-bottom: solid thin rgba(112, 205, 236, 0.141);
+    text-shadow: 5px 5px 5px black;
+}
+.heroContainer h1{
+    margin-bottom: .2em;
+}

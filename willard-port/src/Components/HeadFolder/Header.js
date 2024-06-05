@@ -4,7 +4,7 @@ import './HeadStyles.css';
 
 const Header = () =>{
     return(
-        <div className='headContainer'>head
+        <div className='headContainer'>
             <Nav/>
         </div>
     )

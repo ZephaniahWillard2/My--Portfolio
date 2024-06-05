@@ -1,0 +1,27 @@
+.navContainer{
+    border-bottom: solid thin rgba(112, 205, 236, 0.141);
+}
+.navList{
+   font-size: larger;
+   color: white;
+   padding-top: 1vh;
+   padding-bottom: 2vh;
+   margin-top: 1vh;
+  list-style: none;
+  display: inline-block;
+
+}
+.navList li{
+    display: inline-block;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+li:hover{
+    text-underline-offset: 3px;
+    text-decoration: underline .7px;
+}
+.homeLink:hover{
+    transform-origin: 50% -50%;
+    transform: rotateY(360deg);
+    transition: 1s;
+}

@@ -1,13 +1,11 @@
 import React from "react";
+import './HeroStyles.css'
 
 const Hero = () =>{
     return(
-        <div>
-            this is a test please heurrry and work
-            <div>
-                this is another
-                <p>and this is another</p>
-            </div>
+        <div className="heroContainer">
+           <h1>Zephaniah Willard</h1>
+           <h2>Frontend Developer</h2>
         </div>
     )
 }

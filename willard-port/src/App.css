@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    /* background-image: linear-gradient(to bottom right, #030303, #2144C0); */
+    background: -webkit-linear-gradient(bottom right,#70058b, #000000);
+    /* height: max-content; */
+    background-repeat: no-repeat;
+    background-clip: border-box ;
+    /* background-clip: padding-box;
+    background-clip: content-box; */
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+    color: white;
+    box-sizing: border-box;
+}
+/* *::before{
+    box-sizing: border-box;
+}
+*::after{
+    box-sizing: border-box;
+} */
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    vertical-align: baseline;
+}
+body{
+    overflow: hidden;
+    position: relative;
+}
