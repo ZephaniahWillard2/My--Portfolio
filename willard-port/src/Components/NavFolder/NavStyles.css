@@ -1,5 +1,6 @@
 .navContainer{
-    border-bottom: solid thin rgba(112, 205, 236, 0.141);
+    border-bottom: solid thin rgba(255, 255, 255, 0.141);
+    /* box-shadow: 0px 1px 5px rgba(255, 255, 255, 0.141); */
 }
 .navList{
    font-size: larger;

@@ -1,5 +1,6 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { ChakraProvider } from "@chakra-ui/react";
 import HomePage from "./Components/HomeFolder/HomePage";
 import About from "./Components/AboutFolder/About";
 import Header from "./Components/HeadFolder/Header";
@@ -10,7 +11,7 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      
+      <ChakraProvider>
       <Router>
       <Header/>
         <Routes>
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
         </Routes>
       </Router>
+      </ChakraProvider>
     </div>
   );
 }
