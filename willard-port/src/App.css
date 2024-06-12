@@ -1,19 +1,10 @@
 *{
-    margin: 0%;
-    padding: 0%;
-    /* background-image: linear-gradient(to bottom right, #030303, #2144C0); */
-    background: -webkit-linear-gradient(bottom right,#4d2954, #000000);
-    /* height: max-content; */
-    background-repeat: no-repeat;
-    background-clip: border-box ;
-    /* background-clip: padding-box;
-    background-clip: content-box; */
-    -webkit-background-clip: text;
-    /* -webkit-text-fill-color: transparent; */
     color: white;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
 }
+
 /* *::before{
     box-sizing: border-box;
 }
@@ -26,8 +17,28 @@ body{
     margin: 0%;
     padding: 0%;
     vertical-align: baseline;
-}
-body{
+/* 
+    margin: 0%;
+    padding: 0%; */
+
+    /* background-image: linear-gradient(to bottom right, #030303, #2144C0); */
+    /* height: max-content; */
+     /* background-clip: padding-box;
+    background-clip: content-box; */
+    /* -webkit-text-fill-color: transparent; */
+
+    background: -webkit-linear-gradient(bottom right,#270f32, #000000);
+    background-repeat: no-repeat;
+    background-clip: border-box ;
+    -webkit-background-clip: text;
+
+  
+    box-sizing: border-box;
+    /* background-color: #0c1628; */
+    /* background-color: #13051f; */
+
+
     overflow: hidden;
+    /* overflow-y: scroll; */
     position: relative;
 }

@@ -2,3 +2,7 @@
     height: 900px;
     
 }
+body .homeContainer{
+    overflow: hidden;
+    position: relative;
+}

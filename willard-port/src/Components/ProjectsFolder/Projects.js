@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Heading } from "@chakra-ui/react";
 import FullScreenSection from "../FullScreenF/FullScreenSection";
 import Card from "../CardFolder/Card";
+import "./ProjectsStyles.css";
 
 
 const projects = [
@@ -9,37 +10,56 @@ const projects = [
     title: "React Space",
     description:
       "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+    tools: "JavaScript, React.js",
+    getImageSrc: () => require("../../Images/MyLogo.png"),
+
   },
   {
     title: "React Infinite Scroll",
     description:
       "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
+      tools: "JavaScript, React.js",
+      getImageSrc: () => require("../../Images/MyLogo.png"),
   },
   {
     title: "Photo Gallery",
     description:
       "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
-   
+      tools: "JavaScript, React.js",
+      getImageSrc: () => require("../../Images/MyLogo.png"),
   },
   {
     title: "Event planner",
     description:
       "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
+      tools: "JavaScript, React.js",
+      getImageSrc: () => require("../../Images/Greek.jpg"),
   },
 ];
 
 const ProjectsSection = () => {
   return (
+    <Box className="projectContainer">
+       <Heading
+          as="h1"
+          id="projects-section"
+          borderBottom="solid thin #d28ff9"
+          textAlign="center"
+          height= "200px"
+          fontSize= "75px"
+          paddingTop= "51.5px"
+          fontFamily=""
+          >
+        Projects
+      </Heading>
     <FullScreenSection
-      backgroundColor="#14532d"
-      isDarkBackground
+      // backgroundColor="#14532d"
+      // isDarkBackground
       p={8}
-      alignItems="flex-start"
+      // alignItems="flex-start"
       spacing={8}
     >
-      <Heading as="h1" id="projects-section">
-        Featured Projects
-      </Heading>
+     
       <Box
         display="grid"
         gridTemplateColumns="repeat(2,minmax(0,1fr))"
@@ -50,11 +70,13 @@ const ProjectsSection = () => {
             key={project.title}
             title={project.title}
             description={project.description}
-            // imageSrc={project.getImageSrc()}
+            tools={project.tools}
+            imageSrc={project.getImageSrc()}
           />
         ))}
       </Box>
     </FullScreenSection>
+    </Box>
   );
 };
 

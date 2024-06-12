@@ -4,10 +4,15 @@
     overflow-y: scroll;
 }
 .aboutContainer h1{
-    font-size: 5em;
-    margin-top: .3em;
-    padding-bottom: .6em;
-    border-bottom: solid thin rgba(255, 255, 255, 0.141);
+    /* font-size: 75px;
+    margin-top: 40px;
+    padding-bottom: 40px; */
+    height: 200px;
+    font-size: 75px;
+    border-bottom: solid thin #d28ff9;
+    padding-top: 40.5px;
+    /* margin-bottom: 62.5px; */
+    /* background-color: #fad3ff78; */
 }
 .flexContainer{
     display: flex;

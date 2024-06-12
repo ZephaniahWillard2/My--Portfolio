@@ -1,12 +1,37 @@
 .heroContainer{
     text-align: center;
-    font-size: 4em;
+    font-size: 5em;
     margin-top: 1.5em;
     padding-bottom: 2.2em;
-    border-bottom: solid thin rgba(255, 255, 255, 0.141);
+    /* border-bottom: solid thin #ffffff24; */
+    border-bottom: solid thin #d28ff9;
 
+    /* opacity: 0; */
+    transition: all 3s ease-in-out;
     /* text-shadow: 5px 5px 5px black; */
 }
 .heroContainer h1{
     margin-bottom: .2em;
 }
+.heroContainer.transition{
+    opacity: 1;
+}
+/* 
+.my-component {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease-in-out;
+  } */
+  
+
+
+/* 
+.my-component {
+    opacity: 0;
+  }
+  
+  .my-component.transition {
+    opacity: 1;
+  }
+   */
+

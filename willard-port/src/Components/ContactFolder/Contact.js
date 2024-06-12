@@ -1,11 +1,11 @@
 import React from 'react';
 import './ContactStyles.css'
 
-const Thoughts = () =>{
+const Contact = () =>{
     return(
         <div>contact
         </div>
     )
 };
 
-export default Thoughts;
+export default Contact;
