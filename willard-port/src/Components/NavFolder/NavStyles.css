@@ -1,10 +1,17 @@
 .navContainer{
     /* border-bottom: solid thin #ffffff24; */
     border-bottom: solid thin #d28ff9;
-    /* box-shadow: 0px 1px 5px rgba(255, 255, 255, 0.141); */
+
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    /* border-bottom: var(--border-width) solid var(--border-color); */
 }
 .navList{
-   font-size: large;
+   font-size: larger;
    color: white;
    padding-top: 1vh;
    padding-bottom: 2vh;

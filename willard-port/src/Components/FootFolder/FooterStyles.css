@@ -1,0 +1,40 @@
+.footerContainer{
+    height: 8vh;
+    background-color: black;
+    padding-left: 2vw;
+    border-top: solid thin #d28ff9;
+
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    height: 100%;
+    color: white;
+    font-size: large;
+}
+.flex-container > div{
+    width: 10%;
+    /* margin: 100px; */
+    text-align: center;
+    padding-left: 3vw;
+}
+/* .flex-container > div:hover{
+    background-color: #f4ce14;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+    transition: .2s;
+    text-decoration: underline 2px black;
+    text-underline-offset: 3px;
+} */
+
+.logo{
+    height: 70%;
+    border-radius: 10px;
+    /* margin: 100px; */
+    box-sizing: border-box;
+    border: solid 1px rgba(255, 255, 255, 0.246);
+}

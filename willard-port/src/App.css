@@ -2,6 +2,7 @@
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    /* overflow-y: scroll; */
 
 }
 
@@ -33,7 +34,7 @@ body{
     -webkit-background-clip: text;
 
   
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     /* background-color: #0c1628; */
     /* background-color: #13051f; */
 

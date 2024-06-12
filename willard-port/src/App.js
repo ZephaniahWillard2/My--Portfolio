@@ -8,6 +8,7 @@ import Contact from "./Components/ContactFolder/Contact";
 import Projects from "./Components/ProjectsFolder/Projects";
 import ContactMeSection from "./Components/ContactFolder/ContactMeSection";
 import { AlertProvider } from "./Components/Context/alertContext";
+import Footer from "./Components/FootFolder/Footer";
 import Alert from "./Components/AlertFolder/Alert";
 import './App.css';
 
@@ -35,6 +36,7 @@ function App() {
               <Route path="/projects" element={<Projects/>}/>
               <Route path="/contact" element={<ContactMeSection/>}/>
             </Routes>
+            <Footer/>
           </Router>
         </AlertProvider>
       </ChakraProvider>

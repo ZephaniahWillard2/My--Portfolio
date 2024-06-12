@@ -1,5 +1,5 @@
 .aboutContainer{
-    height: 900px;
+    height: 92vh;
     text-align: center;
     overflow-y: scroll;
 }
@@ -10,7 +10,7 @@
     height: 200px;
     font-size: 75px;
     border-bottom: solid thin #d28ff9;
-    padding-top: 40.5px;
+    padding-top: 70.5px;
     /* margin-bottom: 62.5px; */
     /* background-color: #fad3ff78; */
 }

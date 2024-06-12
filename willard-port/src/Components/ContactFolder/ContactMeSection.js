@@ -44,6 +44,14 @@ const LandingSection = () => {
 
   return (
     <div className="contactMe">
+         <Heading as="h1" id="contactme-section" borderBottom="solid thin #d28ff9"
+          textAlign="center"
+          height= "200px"
+          fontSize= "75px"
+          paddingTop= "81.5px"
+          fontFamily="">
+          Contact
+        </Heading>
     <FullScreenSection
     //   isDarkBackground
     //   backgroundColor="#512DA8"
@@ -51,9 +59,7 @@ const LandingSection = () => {
     //   spacing={8}
     >
       <VStack w="1024px" p={32} alignItems="flex-start">
-        <Heading as="h1" id="contactme-section">
-          Contact me
-        </Heading>
+       
         <Box p={6} rounded="md" w="100%">
           <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>

@@ -47,7 +47,7 @@ const ProjectsSection = () => {
           textAlign="center"
           height= "200px"
           fontSize= "75px"
-          paddingTop= "51.5px"
+          paddingTop= "81.5px"
           fontFamily=""
           >
         Projects
