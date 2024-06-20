@@ -1,0 +1,15 @@
+.cardContainer{
+    transition: transform .3s ease;
+}
+/* .cardContainer:hover{
+    transform: scale(1.022);
+    transition: all .3s ease-in-out;
+    background-color: #270f32;
+} */
+.cardContainer:hover{
+    transform: scale(1.022);
+    transition: all .3s ease-in-out;
+    /* background-color: #2c1438; */
+    border: solid 1px #d28ff98d;
+    box-shadow: 0px 0px 20px -5px #d28ff9;
+}

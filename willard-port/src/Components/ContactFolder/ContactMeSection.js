@@ -43,14 +43,16 @@ const LandingSection = () => {
   });
 
   return (
-    <div className="contactMe">
-         <Heading as="h1" id="contactme-section" borderBottom="solid thin #d28ff9"
-          textAlign="center"
-          height= "200px"
-          fontSize= "75px"
-          paddingTop= "81.5px"
-          fontFamily="">
-          Contact
+    <div className="contactMe" >
+        <Heading
+            as="h1" id="contactme-section"
+            borderBottom="solid thin #d28ff933"
+            textAlign="center"
+            height= "200px"
+            fontSize= "75px"
+            paddingTop= "11vh"
+            fontFamily=""
+        >Contact
         </Heading>
     <FullScreenSection
     //   isDarkBackground
@@ -58,9 +60,9 @@ const LandingSection = () => {
     //   py={16}
     //   spacing={8}
     >
-      <VStack w="1024px" p={32} alignItems="flex-start">
+      <VStack w="1024px" p={32} alignItems="flex-start" marginTop="-10vh">
        
-        <Box p={6} rounded="md" w="100%">
+        <Box p={6} rounded="md" w="100%" backgroundColor="black" border="solid 1px #D9D9D9 ">
           <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>
               <FormControl isInvalid={formik.touched.firstName && formik.errors.firstName}>
@@ -89,6 +91,7 @@ const LandingSection = () => {
                   name="type"
                   {...formik.getFieldProps("type")}
                 >
+                  <option></option>
                   <option value="hireMe">Freelance project proposal</option>
                   <option value="openSource">
                     Open source consultancy session
@@ -106,7 +109,7 @@ const LandingSection = () => {
                 />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
-              <Button type="submit" colorScheme="purple" width="full" isLoading={isLoading}>
+              <Button className="formButton" type="submit" color="white" backgroundColor="#521f69" width="full" isLoading={isLoading} _hover={{transform:"scale(1.025)", transition:"all .3s ease-in-out", backgroundColor:"#b581d3", color:"black"}}>
                 Submit
               </Button>
             </VStack>

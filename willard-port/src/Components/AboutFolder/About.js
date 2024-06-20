@@ -9,7 +9,7 @@ const About = () => {
             <main className="flexContainer">
                 <section className="flexOne">
                     <h2>Hi! I'm Zeph,</h2>
-                    <p> And I'm a Frontend and Web Developer. 
+                    <p> I'm a Frontend and Web Developer. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         Adipiscing bibendum est ultricies integer quis auctor elit. 
@@ -19,7 +19,7 @@ const About = () => {
                         Nulla facilisi nullam vehicula ipsum. Et netus et malesuada fames ac.
                     </p>
                 </section>
-                <section className="flexTwo">
+                {/* <section className="flexTwo">
                     <h2>Ask Me About...</h2>
                     <div>
                         <ul className="topicContainer">
@@ -29,7 +29,7 @@ const About = () => {
                             <li>Filler text</li>
                         </ul>
                     </div>
-                </section>
+                </section> */}
             </main>
         </div>
     )

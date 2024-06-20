@@ -9,10 +9,12 @@
     padding-bottom: 40px; */
     height: 200px;
     font-size: 75px;
-    border-bottom: solid thin #d28ff9;
-    padding-top: 70.5px;
+    border-bottom: solid thin #d28ff933;
+    padding-top: 9.723vh;
     /* margin-bottom: 62.5px; */
     /* background-color: #fad3ff78; */
+    /* background-color: #51e5cf45; */
+
 }
 .flexContainer{
     display: flex;

@@ -11,6 +11,9 @@
 }
 .heroContainer h1{
     margin-bottom: .2em;
+    /* color: #b581d3;
+    color: #521f69; */
+
 }
 .heroContainer.transition{
     opacity: 1;

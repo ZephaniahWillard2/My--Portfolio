@@ -43,11 +43,11 @@ const ProjectsSection = () => {
        <Heading
           as="h1"
           id="projects-section"
-          borderBottom="solid thin #d28ff9"
+          borderBottom="solid thin #d28ff933"
           textAlign="center"
           height= "200px"
           fontSize= "75px"
-          paddingTop= "81.5px"
+          paddingTop= "11vh"
           fontFamily=""
           >
         Projects
@@ -55,15 +55,16 @@ const ProjectsSection = () => {
     <FullScreenSection
       // backgroundColor="#14532d"
       // isDarkBackground
-      p={8}
+      p={14}
       // alignItems="flex-start"
-      spacing={8}
+      spacing={14}
+      marginTop="10vh"
     >
      
       <Box
         display="grid"
         gridTemplateColumns="repeat(2,minmax(0,1fr))"
-        gridGap={8}
+        gridGap={14}
       >
         {projects.map((project) => (
           <Card

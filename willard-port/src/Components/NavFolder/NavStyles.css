@@ -1,6 +1,6 @@
 .navContainer{
     /* border-bottom: solid thin #ffffff24; */
-    border-bottom: solid thin #d28ff9;
+    border-bottom: solid thin #d28ff9a7;
 
     width: 100vw;
     position: fixed;
@@ -13,26 +13,57 @@
 .navList{
    font-size: larger;
    color: white;
-   padding-top: 1vh;
+   /* padding-top: 1vh;
    padding-bottom: 2vh;
-   margin-top: 1vh;
+   margin-top: 1vh; */
   list-style: none;
   display: inline-block;
+  transition: transform .2s ease;
+
+  display: flex;
+  height: 9vh;
+  flex-direction: row;
+  align-items: center;
 
 }
 .navList li{
     display: inline-block;
-    padding-right: 2vw;
-    padding-left: 2vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    padding: .7vh .8vw .7vh .8vw;
+    border-radius: 3px;
+    transition: all .25s ease-in-out;
+
+    /* background-color:  #d28ff933; */
+
 }
 li:hover{
-    text-underline-offset: 3px;
-    text-decoration: underline .7px;
+    /* text-underline-offset: 3px;
+    text-decoration: underline .7px; */
     /* color: #D96DD9; */
-    color: #d28ff9;
+    color: #D495F9;
+    background-color:  #d28ff933;
+    transition: all .25s ease-in-out;
+}
+.navLogo{
+    /* height: 6vh; */
+    border-radius: 5px;
+    /* margin: 100px; */
+    box-sizing: border-box;
+    border: solid 1px #ffffff3f;
+    transition: .3s ease-in-out;
+
+}
+.navLogo:hover{
+    transition: .3s ease-in-out;
+    border: solid 1px #d495f9ac;
+    box-shadow: 0px 0px 20px -6px #d28ff9;
+
 }
 .homeLink:hover{
-    transform-origin: 50% -50%;
+    /* transform-origin: 50% -50%;
     transform: rotateY(360deg);
     transition: 1s;
+    transition-delay: .2s; */
+    background-color: black;
 }
