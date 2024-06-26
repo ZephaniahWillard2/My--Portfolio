@@ -60,7 +60,7 @@ const LandingSection = () => {
     //   py={16}
     //   spacing={8}
     >
-      <VStack w="1024px" p={32} alignItems="flex-start" marginTop="-10vh">
+      <VStack w="1024px" p={32} alignItems="flex-start" marginTop="-4vh">
        
         <Box p={6} rounded="md" w="100%" backgroundColor="black" border="solid 1px #D9D9D9 ">
           <form onSubmit={formik.handleSubmit}>
@@ -109,7 +109,7 @@ const LandingSection = () => {
                 />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
-              <Button className="formButton" type="submit" color="white" backgroundColor="#521f69" width="full" isLoading={isLoading} _hover={{transform:"scale(1.025)", transition:"all .3s ease-in-out", backgroundColor:"#b581d3", color:"black"}}>
+              <Button className="formButton" type="submit" color="white" backgroundColor="#521f69" width="full" isLoading={isLoading} _hover={{transform:"scale(1.02)", transition:"all .3s ease-in-out", backgroundColor:"#743990"}}>
                 Submit
               </Button>
             </VStack>
