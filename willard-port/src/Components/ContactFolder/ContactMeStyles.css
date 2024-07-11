@@ -1,5 +1,14 @@
 .contactMe{
-    height: 92vh;
+    height: 100vh;
     overflow-y: scroll;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: sans-serif;
+    
+}
+
+.css-iljzwp input, textarea, button{
+    font-family: sans-serif;
+}
+.css-iljzwp label{
+    font-family: sans-serif;
 }

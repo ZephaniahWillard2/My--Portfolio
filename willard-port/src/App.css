@@ -28,7 +28,7 @@ body{
     background-clip: content-box; */
     /* -webkit-text-fill-color: transparent; */
 
-    background: -webkit-linear-gradient(bottom right,#270f32, #000000);
+    background: -webkit-linear-gradient(bottom,#270f32, #000000);
     background-repeat: no-repeat;
     background-clip: border-box ;
     -webkit-background-clip: text;

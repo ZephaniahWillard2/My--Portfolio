@@ -1,46 +1,94 @@
+/* Whole page */
 .aboutContainer{
-    height: 92vh;
+    height: 100vh;
     text-align: center;
     overflow-y: scroll;
 }
+
+/* header */
 .aboutContainer h1{
-    /* font-size: 75px;
-    margin-top: 40px;
+    /* margin-top: 40px;
     padding-bottom: 40px; */
     height: 200px;
     font-size: 75px;
     border-bottom: solid thin #d28ff933;
     padding-top: 9.723vh;
     /* margin-bottom: 62.5px; */
-    /* background-color: #fad3ff78; */
-    /* background-color: #51e5cf45; */
-
 }
+
+/* flex container */
 .flexContainer{
     display: flex;
+    /* flex: 1 1 0px; */
     margin-top: 5vh;
     font-size: large;
+    font-family: sans-serif;
+    text-align: left;
+    /* column-gap: 200px; */
 }
+
+/* About text */
 .flexOne{
     display: flex;
-    flex: 1 40%;
+    flex: 1 46%;
     flex-direction: column;
-    line-height: 5vh;
+    line-height: 4vh;
     margin-right: 4vw;
     margin-left: 4vw;
-
+    padding-right: 5vw;
 }
 .flexOne h2{
     padding-bottom: 2vh;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
 }
+.aboutPara{
+    font-family: sans-serif;
+}
+
+/* certificates/ask about */
 .flexTwo{
     display: flex;
-    flex: 2 60%;
+    flex: 2 54%;
     flex-direction: column;
+    list-style: none;
+    /* display: inline-block; */
+    padding-left: 10vw;
+    /* line-height: 4vh; */
+    border-left: solid .5px #d28ff933;
+}
+.flexTwo li{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    padding-right: 1vw;
+
+}
+.flexTwo h2{
+    padding-bottom: 2vh;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+}
+.certificateContainer{
     list-style: none;
     display: inline-block;
 }
-.topicContainer{
-    list-style: none;
-    display: inline-block;
+
+/* ask about */
+.askAboutContainer{
+    margin-top: 6vh;
+}
+
+.certificateContainer a{
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.certificateContainer li{
+    padding: .5vh;
+    border-radius: 3px;
+}
+.certificateContainer li:hover{
+    color: #E6BCFF;
 }

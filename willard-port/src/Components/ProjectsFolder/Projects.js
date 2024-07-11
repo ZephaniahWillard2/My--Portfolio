@@ -7,33 +7,33 @@ import "./ProjectsStyles.css";
 
 const projects = [
   {
-    title: "React Space",
+    title: "Dynamic Art Gallery",
     description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
-    tools: "JavaScript, React.js",
-    getImageSrc: () => require("../../Images/MyLogo.png"),
+      "A dynamic web app for viewing and storing online artwork. Browse the art gallery, view individual art pieces, and add art pieces to your collection.",
+    tools: "JavaScript | React.js | Routing | CSS",
+    getImageSrc: () => require("../../Images/ArtGallerySS.png"),
 
   },
   {
-    title: "React Infinite Scroll",
+    title: "Little Lemon Capstone",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
-      tools: "JavaScript, React.js",
-      getImageSrc: () => require("../../Images/MyLogo.png"),
+      "Coursera capstone project, consisting of Little Lemon's website and focused on providing an online reservation page.",
+      tools: "JavaScript | React.js | API | Routing | CSS" ,
+      getImageSrc: () => require("../../Images/LLCapstoneTallSS.png"),
   },
   {
-    title: "Photo Gallery",
+    title: "Furniture Store",
     description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
-      tools: "JavaScript, React.js",
-      getImageSrc: () => require("../../Images/MyLogo.png"),
+      "A furniture store website to add and catalog furniture items, their type, and their prices.",
+      tools: "JavaScript | React.js | CSS",
+      getImageSrc: () => require("../../Images/FurnitureStoreSS.png"),
   },
   {
-    title: "Event planner",
+    title: "DJ Days",
     description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
-      tools: "JavaScript, React.js",
-      getImageSrc: () => require("../../Images/Greek.jpg"),
+      "A dynamic web application that allows users to browse through a list of albums, add new albums to their collection, and select any album to be played.",
+      tools: "JavaScript | CSS | Servers | HTML",
+      getImageSrc: () => require("../../Images/DjDSSTwo.png"),
   },
 ];
 
@@ -64,7 +64,7 @@ const ProjectsSection = () => {
       <Box
         display="grid"
         gridTemplateColumns="repeat(2,minmax(0,1fr))"
-        gridGap={14}
+        gridGap={16}
       >
         {projects.map((project) => (
           <Card

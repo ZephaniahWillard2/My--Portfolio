@@ -19,7 +19,7 @@ const Card = ({ title, description, tools, imageSrc }) => {
           rounded="2xl"
           paddingBottom={5}
           fontFamily="cursive"
-          height="40vh"
+          height="30vh"
           minWidth="400px"
         >
             <Box
@@ -30,7 +30,7 @@ const Card = ({ title, description, tools, imageSrc }) => {
               gridTemplateColumns="repeat(2,minmax(0,1fr))"
             >
                 <Image
-                  height="100%"
+                  // height="100%"
                   src={imageSrc}
                   alt={title }
                   rounded="2xl"
@@ -45,14 +45,15 @@ const Card = ({ title, description, tools, imageSrc }) => {
                   bottom="0"
                   right="0"
                   // overflow="hidden"
+                  // height="40vh"
                 >
-                    <Heading paddingY={3} size="md">{title }</Heading>
-                    <Text height="100%">{ description}</Text>
-                    <Text>{ tools }</Text>
-                    <HStack spacing={2}>
-                      {/* <Text fontWeight="bold">See More</Text> */}
-                      {/* <FontAwesomeIcon icon={ faArrowRight}/> */}
-                    </HStack>
+                    <Heading paddingY={3} size="md" textDecoration={"1px underline"} textUnderlineOffset={"4px"}>{title }</Heading>
+                    <Text height="100%" style={{paddingTop:"1px"}} fontFamily="sans-serif" fontWeight="lighter">{ description}</Text>
+                    <Text fontFamily="sans-serif"  style={{paddingTop:"20px"}} fontStyle="italic" fontWeight="lighter">{ tools }</Text>
+                    {/* <HStack spacing={2}>
+                      <Text fontWeight="bold">See More</Text>
+                      <FontAwesomeIcon icon={ faArrowRight}/>
+                    </HStack> */}
                 </Box>
             </Box>
         </Box>

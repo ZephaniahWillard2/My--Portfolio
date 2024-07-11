@@ -62,8 +62,8 @@ const LandingSection = () => {
     >
       <VStack w="1024px" p={32} alignItems="flex-start" marginTop="-4vh">
        
-        <Box p={6} rounded="md" w="100%" backgroundColor="black" border="solid 1px #D9D9D9 ">
-          <form onSubmit={formik.handleSubmit}>
+        <Box p={6} rounded="md" w="100%" backgroundColor="black" border="solid 1px #D9D9D9">
+          <form onSubmit={formik.handleSubmit} style={{fontFamily:"sans-serif"}}>
             <VStack spacing={4}>
               <FormControl isInvalid={formik.touched.firstName && formik.errors.firstName}>
                 <FormLabel htmlFor="firstName">Name</FormLabel>
@@ -109,7 +109,7 @@ const LandingSection = () => {
                 />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
-              <Button className="formButton" type="submit" color="white" backgroundColor="#521f69" width="full" isLoading={isLoading} _hover={{transform:"scale(1.02)", transition:"all .3s ease-in-out", backgroundColor:"#743990"}}>
+              <Button className="formButton" type="submit" color="white" backgroundColor="#521f69" width="full" isLoading={isLoading} _hover={{transform:"scale(1.02)", transition:"all .3s ease-in-out", backgroundColor:"#5e2a76"}}>
                 Submit
               </Button>
             </VStack>
@@ -122,3 +122,6 @@ const LandingSection = () => {
 };
 
 export default LandingSection;
+
+
+// 388697
