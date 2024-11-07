@@ -2,38 +2,15 @@
     text-align: center;
     font-size: 5em;
     margin-top: 3em;
-    /* padding-bottom: 2.2em; */
-    /* border-bottom: solid thin #ffffff24; */
-
-    /* opacity: 0; */
+    padding-bottom: 2.2em; 
+    border-bottom: solid thin #ffffff24;
     transition: all 3s ease-in-out;
-    /* text-shadow: 5px 5px 5px black; */
 }
+
 .heroContainer h1{
     margin-bottom: .2em;
-    /* color: #b581d3;
-    color: #521f69; */
-
 }
+
 .heroContainer.transition{
     opacity: 1;
 }
-/* 
-.my-component {
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-    transition: all 0.3s ease-in-out;
-  } */
-  
-
-
-/* 
-.my-component {
-    opacity: 0;
-  }
-  
-  .my-component.transition {
-    opacity: 1;
-  }
-   */
-

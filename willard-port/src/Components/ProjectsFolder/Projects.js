@@ -56,7 +56,6 @@ const ProjectsSection = () => {
       // backgroundColor="#14532d"
       // isDarkBackground
       p={14}
-      // alignItems="flex-start"
       spacing={14}
       marginTop="10vh"
     >

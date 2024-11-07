@@ -10,14 +10,15 @@ const Card = ({ title, description, tools, imageSrc }) => {
   // Feel free to import other UI components from Chakra UI if you wish to.
   return (
     <div>
-      <HStack spacing={3}>
+      <HStack 
+        spacing={3}
+      >
         <Box
           className="cardContainer"
           backgroundColor="black"
           // border="solid 1px #d28ff933"
-          textColor="black"
+          // textColor="black"
           rounded="2xl"
-          paddingBottom={5}
           fontFamily="cursive"
           height="30vh"
           minWidth="400px"
@@ -39,17 +40,18 @@ const Card = ({ title, description, tools, imageSrc }) => {
                   paddingX={4}
                   display="grid"
                   gridColumn="2"
-                  position="absolute"
-                  top="0"
-                  left="0"
-                  bottom="0"
-                  right="0"
+                  
+                  // position="absolute"
+                  // top="0"
+                  // left="0"
+                  // bottom="0"
+                  // right="0"  still for del?
                   // overflow="hidden"
                   // height="40vh"
                 >
-                    <Heading paddingY={3} size="md" textDecoration={"1px underline"} textUnderlineOffset={"4px"}>{title }</Heading>
-                    <Text height="100%" style={{paddingTop:"1px"}} fontFamily="sans-serif" fontWeight="lighter">{ description}</Text>
-                    <Text fontFamily="sans-serif"  style={{paddingTop:"20px"}} fontStyle="italic" fontWeight="lighter">{ tools }</Text>
+                    <Heading size="md" textDecoration={"1px underline"} textUnderlineOffset={"4px"}>{title }</Heading>
+                    <Text height="100%" fontFamily="sans-serif" fontWeight="lighter">{ description}</Text>
+                    <Text fontFamily="sans-serif" fontStyle="italic" fontWeight="lighter">{ tools }</Text>
                     {/* <HStack spacing={2}>
                       <Text fontWeight="bold">See More</Text>
                       <FontAwesomeIcon icon={ faArrowRight}/>

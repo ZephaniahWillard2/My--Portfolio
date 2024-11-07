@@ -64,7 +64,9 @@ const LandingSection = () => {
        
         <Box p={6} rounded="md" w="100%" backgroundColor="black" border="solid 1px #D9D9D9">
           <form onSubmit={formik.handleSubmit} style={{fontFamily:"sans-serif"}}>
-            <VStack spacing={4}>
+            <VStack 
+              spacing={4}
+            >
               <FormControl isInvalid={formik.touched.firstName && formik.errors.firstName}>
                 <FormLabel htmlFor="firstName">Name</FormLabel>
                 <Input
@@ -104,7 +106,7 @@ const LandingSection = () => {
                 <Textarea
                   id="comment"
                   name="comment"
-                  height={250}
+                  height={150}
                   {...formik.getFieldProps("comment")}
                 />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>

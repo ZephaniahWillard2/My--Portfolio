@@ -39,7 +39,7 @@ const Footer = () =>{
                 <nav>
                     {/* Add social media links based on the `socials` data */}
                     <HStack spacing={16} style={{marginLeft:"1vw"}} >
-                        {/* Add gmail stuff here */}
+                        {/* Add gmail stuff here, can del marginLeft^ */}
                     {email.map((email) =>(
                         <a href={email.url}>
                         <FontAwesomeIcon icon={email.icon} size="2x" className="emailIcon"/>
