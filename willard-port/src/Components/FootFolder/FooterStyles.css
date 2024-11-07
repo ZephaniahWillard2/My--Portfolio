@@ -44,5 +44,5 @@
 .faIcon:hover{
     transition: all .3s ease-in-out;
     background-color: #00000000;
-    box-shadow: 0px 0px 20px -6px #d28ff9;
+    box-shadow: 0px 0px 20px 0px #d28ff9;
 }

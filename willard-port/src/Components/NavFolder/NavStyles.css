@@ -45,14 +45,14 @@ li:hover{
     border-radius: 5px;
     /* margin: 100px; */
     box-sizing: border-box;
-    border: solid 1px #ea8dff3f;
+    /* border: solid 1px #ea8dff3f; */
     transition: .3s ease-in-out;
 }
 
 .navLogo:hover{
     transition: .3s ease-in-out;
-    border: solid 1px #d495f9ac;
-    box-shadow: 0px 0px 20px -6px #d28ff9;
+    /* border: solid 1px #d495f9ac; */
+    box-shadow: 0px 0px 20px 0px #d28ff9;
 }
 
 .homeLink:hover{

@@ -1,10 +1,11 @@
 .heroContainer{
     text-align: center;
-    font-size: 5em;
-    margin-top: 3em;
+    font-size: 6em;
+    margin-top: 2em;
     padding-bottom: 2.2em; 
-    border-bottom: solid thin #ffffff24;
+    /* border-bottom: solid thin #ffffff24; */
     transition: all 3s ease-in-out;
+    height: 80vh;
 }
 
 .heroContainer h1{

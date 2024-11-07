@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import HomePage from "./Components/HomeFolder/HomePage";
@@ -24,6 +24,38 @@ function App() {
       }),
     },
   });
+
+  
+
+
+    useEffect(() => {
+        // Select all anchor elements that link to an ID within the page
+        const anchors = document.querySelectorAll('a[href^="#"]');
+        
+        const handleClick = (e) => {
+            e.preventDefault();
+            const targetId = e.currentTarget.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        };
+        
+        // Attach event listeners to each anchor element
+        anchors.forEach(anchor => anchor.addEventListener('click', handleClick));
+        
+        // Cleanup function to remove listeners when component unmounts
+        return () => {
+            anchors.forEach(anchor => anchor.removeEventListener('click', handleClick));
+        };
+    }, []); // Empty dependency array to run this effect only on mount
+
+   
+
+
+
+
 
   return (
     <div className="App">

@@ -47,11 +47,13 @@ const LandingSection = () => {
         <Heading
             as="h1" id="contactme-section"
             borderBottom="solid thin #d28ff933"
-            textAlign="center"
+            // textAlign="center"
             height= "200px"
             fontSize= "75px"
             paddingTop= "11vh"
             fontFamily=""
+            textAlign="left"
+            marginLeft="51px"
         >Contact
         </Heading>
     <FullScreenSection

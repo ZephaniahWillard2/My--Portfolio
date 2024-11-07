@@ -16,7 +16,7 @@ const About = () => {
  {/* Journey into Tech */}
 
                         Currently I am completing an internship with We Sparkle, a start-up tech company, where my focus has been
-                        updating existing features, styles, and functionality.<br></br><br></br>
+                        updating existing features, styles, and functionality of WeSparkle's website.<br></br><br></br>
 {/* Working on today */}
 
                         I most enjoy building software that combines aesthetic design and creative functionality to make for
