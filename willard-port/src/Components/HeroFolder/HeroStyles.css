@@ -2,10 +2,13 @@
     text-align: center;
     font-size: 6em;
     margin-top: 2em;
-    padding-bottom: 2.2em; 
+    margin-bottom: 2em; 
+    
+
     /* border-bottom: solid thin #ffffff24; */
     transition: all 3s ease-in-out;
-    height: 80vh;
+    height: 40vh;
+    background-color: #030303de;
 }
 
 .heroContainer h1{

@@ -6,6 +6,8 @@
     top: 0;
     z-index: 100;
     background-color: black;
+    /* border-bottom: solid thin #e5b9ff; */
+
 }
 
 .navList{

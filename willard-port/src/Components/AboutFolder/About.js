@@ -27,7 +27,7 @@ const About = () => {
                         web development in general, and I am currently taking an online certificate course by meta for Backend Development.<br></br><br></br>
 {/* Tech free time (specific) */}
 
-                        When I'm not on my computer I'm usually writing music, hiking, watching a new movie, rhyming, reading about the brain, or
+                        When I'm not on my computer, I'm usually writing music, hiking, watching a new movie, rhyming, reading about the brain, or
                         running around in the rain.<br></br><br></br><br></br>
 {/* Personal interests */}
 
