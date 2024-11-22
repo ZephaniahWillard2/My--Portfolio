@@ -27,12 +27,15 @@ body{
     margin: 0%;
     padding: 0%;
     vertical-align: baseline;
-
+    /* ORIGINAL */
     background-image: linear-gradient(to bottom right, #030303, #030303);
+
     /* -webkit-text-fill-color: transparent; */
     /* background-image: linear-gradient(to bottom right, #eed8ff, #eed8ff); */
 
-    /* background: -webkit-linear-gradient(bottom,#270f32, #000000); */
+    /* NEW */
+    /* background: -webkit-linear-gradient(bottom,#222222, #2d2a2f); */
+
     background-repeat: no-repeat;
     background-clip: border-box ;
     -webkit-background-clip: text;
