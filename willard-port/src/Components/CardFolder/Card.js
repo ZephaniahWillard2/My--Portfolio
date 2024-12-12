@@ -1,61 +1,15 @@
 import React from "react";
-import { Heading, Text, Box } from "@chakra-ui/react";
+import { Box, Heading, Text, Image } from "@chakra-ui/react";
 import "./CardStyles.css";
 
-const Card = ({ title, description, tools }) => {
+const Card = ({ title, description, tools, imageSrc }) => {
   return (
-    <Box
-      className="cardContainer"
-      backgroundColor="black"
-      textColor="white"
-      rounded="2xl"
-      padding={5}
-      fontFamily="cursive"
-      display="grid"
-      gridTemplateColumns="4fr 3fr" // Narrow column for title, wider column for content
-      gap={16}
-      alignItems="start"
-    >
-      {/* Title Column */}
-      <Box
-        gridColumn="1"
-        display="flex"
-        alignItems="center" // Center the title vertically within the first column
-        height="50px" // Set a fixed height for the title
-      >
-        <Heading
-          size="md"
-          // textDecoration="underline"
-          // textUnderlineOffset="4px"
-          textAlign="left" // Align the title text to the left
-        >
-          {title}
-        </Heading>
-      </Box>
-
-      {/* Content Column (Description + Tools) */}
-      <Box
-        gridColumn="2"
-        display="flex"
-        flexDirection="column" // Stack description and tools vertically
-        justifyContent="flex-start" // Align content to the top of the column
-        textAlign="left"
-        border="0 solid #e5e7eb"
-        // backgroundColor="#d28ff933"
-        backgroundColor="#d28ff91d"
-        padding="15px"
-      >
-        <Text fontFamily="sans-serif" fontWeight="lighter">
-          {description}
-        </Text>
-        <Text
-          fontFamily="sans-serif"
-          paddingTop="20px"
-          fontStyle="italic"
-          fontWeight="lighter"
-        >
-          {tools}
-        </Text>
+    <Box className="cardContainer">
+      <Image src={imageSrc} alt={title} className="cardImage" />
+      <Box className="cardOverlay">
+        <Heading className="cardTitle">{title}</Heading>
+        <Text className="cardDescription">{description}</Text>
+        <Text className="cardTools">{tools}</Text>
       </Box>
     </Box>
   );
@@ -72,7 +26,107 @@ export default Card;
 
 
 
-//ORIGINAL CODE
+
+
+
+
+
+//ALTERNATE CODE 2: Vertical cards
+// import React from "react";
+// import { Heading, Text, Box, VStack, Image } from "@chakra-ui/react";
+// import "./CardStyles.css";
+
+// const Card = ({ title, description, tools, imageSrc }) => {
+//   return (
+//     <div>
+//       <VStack spacing={3} align="stretch">
+//         <Box
+//           className="cardContainer"
+//           backgroundColor="black"
+//           border="solid 1px #d28ff933"
+//           textColor="black"
+//           rounded="base"
+//           // padding={5}
+//           fontFamily="cursive"
+//           height="500px"
+//           width="400px"
+//           display="flex"
+//           flexDirection="column"
+//           justifyContent="space-between"
+//         >
+//           <Image
+//             src={imageSrc}
+//             alt={title}
+//             roundedTop="base"
+//             // roundedBottom="none"
+//             objectFit="cover"
+//             height="245px"
+//             width="100%"
+//           />
+//           <Box paddingX={4} flex="1">
+//             <Heading 
+//               paddingY={3} 
+//               size="md" 
+//               textDecoration="underline" 
+//               textUnderlineOffset="4px"
+//               textAlign="left"
+//             >
+//               {title}
+//             </Heading>
+//             <Text 
+//               fontFamily="sans-serif" 
+//               fontWeight="lighter"
+//               textAlign="left"
+//             >
+//               {description}
+//             </Text>
+//             <Text 
+//               fontFamily="sans-serif"  
+//               paddingTop="20px" 
+//               fontStyle="italic" 
+//               fontWeight="lighter"
+//               textAlign="center"
+//             >
+//               {tools}
+//             </Text>
+//           </Box>
+//         </Box>
+//       </VStack>
+//     </div>
+//   );
+// };
+
+// export default Card;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from "react";
+// import { Heading, Text, Box, HStack, VStack, Image } from "@chakra-ui/react";
+// import "./CardStyles.css";
+
+// //ORIGINAL CODE
 
 // const Card = ({ title, description, tools, imageSrc }) => {
 //   // Implement the UI for the Card component according to the instructions.
@@ -84,7 +138,7 @@ export default Card;
 //         <Box
 //           className="cardContainer"
 //           backgroundColor="black"
-//           // border="solid 1px #d28ff933"
+//           border="solid 1px #d28ff933"
 //           textColor="black"
 //           rounded="2xl"
 //           paddingBottom={5}
@@ -133,3 +187,85 @@ export default Card;
 // };
 
 // export default Card;
+
+
+
+
+
+
+
+
+
+
+
+
+//ALTERNATE CODE: Name 1 column, content 2 column
+
+// import React from "react";
+// import { Heading, Text, Box } from "@chakra-ui/react";
+// import "./CardStyles.css";
+
+// const Card = ({ title, description, tools }) => {
+//   return (
+//     <Box
+//       className="cardContainer"
+//       // backgroundColor="black"
+//       textColor="white"
+//       rounded="2xl"
+//       padding={5}
+//       fontFamily="cursive"
+//       display="grid"
+//       gridTemplateColumns="2fr 1fr" // Narrow column for title, wider column for content
+//       gap={0}
+//       alignItems="start"
+//     >
+//       {/* Title Column */}
+//       <Box
+//         gridColumn="1"
+//         display="flex"
+//         alignItems="center" // Center the title vertically within the first column
+//         height="50px" // Set a fixed height for the title
+//       >
+//         <Heading
+//           size="md"
+//           // textDecoration="underline"
+//           // textUnderlineOffset="4px"
+//           textAlign="left" // Align the title text to the left
+//         >
+//           {title}
+//         </Heading>
+//       </Box>
+
+//       {/* Content Column (Description + Tools) */}
+//       <Box
+//         className="contentColumnContainer"
+//         gridColumn="2"
+//         display="flex"
+//         flexDirection="column" // Stack description and tools vertically
+//         justifyContent="flex-start" // Align content to the top of the column
+//         textAlign="left"
+//         border="0 solid #e5e7eb"
+
+//         // backgroundColor="#d28ff933"
+//         backgroundColor="#2c1f34"
+//         padding="17px"
+//         borderRadius="5px"
+//       >
+//         <Text fontFamily="sans-serif" fontWeight="lighter">
+//           {description}
+//         </Text>
+//         <Text
+//           fontFamily="sans-serif"
+//           paddingTop="20px"
+//           fontStyle="italic"
+//           fontWeight="lighter"
+//         >
+//           {tools}
+//         </Text>
+//       </Box>
+//     </Box>
+//   );
+// };
+
+// export default Card;
+

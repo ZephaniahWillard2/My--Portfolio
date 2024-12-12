@@ -27,10 +27,11 @@ const RandomDrawingAnimation = () => {
     p5.draw = () => {
       p5.background(3, 3, 3, 25); // Dark background with slight transparency for fading effect
 
-      p5.stroke('#e5b9ff'); // Color for the lines
+    //   p5.stroke('#e5b9ff'); // Color for the lines
+      p5.stroke('#2c1f34'); // Color for the lines
       p5.strokeWeight(2);
 
-      // Draw continuous, non-linear lines by updating point positions
+      // Draw continuous lines by updating point positions
       for (let point of points) {
         let oldX = point.x;
         let oldY = point.y;

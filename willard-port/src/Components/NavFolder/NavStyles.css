@@ -39,6 +39,9 @@
 li:hover{
     color: #D495F9;
     background-color:  #d28ff933;
+
+    /* background-color:  #e0aaff8f; */
+
     transition: all .25s ease-in-out;
 }
 

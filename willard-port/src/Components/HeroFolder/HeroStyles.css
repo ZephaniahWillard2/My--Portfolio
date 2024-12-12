@@ -8,7 +8,8 @@
     /* border-bottom: solid thin #ffffff24; */
     transition: all 3s ease-in-out;
     height: 40vh;
-    background-color: #030303de;
+    /* background-color: #030303de; */
+    /* ^For the Random drawing animation */
 }
 
 .heroContainer h1{
